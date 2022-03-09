@@ -18,7 +18,7 @@ CMD ["./hello"]
 ```
 FROM alpine
 
-RUN add --no-cache wget gcc musl-dev # buildkit
+RUN apk add --no-cache wget gcc musl-dev # buildkit
 
 WORKDIR /app
 
@@ -33,7 +33,7 @@ CMD ["./hello"]
 ```
 FROM alpine
 
-RUN add --no-cache wget gcc musl-dev # buildkit
+RUN apk add --no-cache wget gcc musl-dev # buildkit
 
 WORKDIR /app
 
@@ -48,7 +48,7 @@ CMD ["./hello"]
 ```
 FROM [DOCKER REGISTRY]/[DOCKER REPO]/alpine
 
-RUN add --no-cache wget gcc musl-dev # buildkit
+RUN apk add --no-cache wget gcc musl-dev # buildkit
 
 WORKDIR /app
 
