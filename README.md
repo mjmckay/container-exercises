@@ -1,7 +1,7 @@
 ## Image and Container Exercises - Paying Attention to Dockerfile Details
 Exercises around image building and management
 
-### Build & Run with the Original Dockerfile
+### Step 1: Build & Run with the Original Dockerfile
 ```
 FROM mjmckay.jfrog.io/app-docker/myalpine:latest
 
@@ -14,7 +14,7 @@ RUN gcc -o hello helloworld.c
 CMD ["./hello"]
 ```
   
-### Use an Official Base Image!
+### Step 2: Use an Official Base Image!
 ```
 FROM alpine
 
@@ -29,7 +29,7 @@ RUN gcc -o hello helloworld.c
 CMD ["./hello"]
 ```
 
-### Don't Rely on External Resources
+### Step 3: Don't Rely on External Resources
 ```
 FROM alpine
 
@@ -44,7 +44,7 @@ RUN gcc -o hello helloworld.c
 CMD ["./hello"]
 ```
 
-### Manage Your Repositories
+### Step 4: Manage Your Repositories
 ```
 FROM [DOCKER REGISTRY]/[DOCKER REPO]/alpine
 
